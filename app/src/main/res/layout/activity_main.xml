@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/custom_layout"
+    android:id="@+id/layout2"
+    >
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <TextView
+              android:id="@+id/textView8"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="REGISTRATION FORM"
+              android:gravity="center"
+              android:textStyle="bold"/>
+
+          <EditText
+              android:id="@+id/ename"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:hint="Name"
+              android:inputType="textPersonName" />
+
+          <EditText
+              android:id="@+id/eemail"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:hint="Email"
+              android:inputType="textEmailAddress" />
+
+          <EditText
+              android:id="@+id/efone"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:inputType="phone"
+              android:maxLength="10"
+              android:hint="Phone"/>
+
+          <EditText
+              android:id="@+id/eaddress"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:inputType="textPostalAddress"
+              android:hint="Address"
+              />
+
+          <EditText
+              android:id="@+id/edob"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:inputType="date"
+              android:hint="D/O/B=dd/mm/yy"/>
+
+          <RadioGroup
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/rg">
+
+              <TextView
+                  android:id="@+id/gender"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Gender"
+                  android:textSize="20dp"
+                  android:textStyle="bold"/>
+
+              <RadioButton
+                  android:id="@+id/male"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="MALE" />
+
+              <RadioButton
+                  android:id="@+id/female"
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="FEMALE" />
+          </RadioGroup>
+
+          <CheckBox
+              android:id="@+id/c1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Accept Terms and Conditions" />
+
+          <Button
+              android:id="@+id/submit"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Show Data"
+              android:background="@drawable/custom_button"/>
+
+          <TextView
+              android:id="@+id/show"
+              android:layout_width="match_parent"
+              android:layout_height="274dp"
+              android:text="SHOW Data" />
+
+          <Button
+              android:id="@+id/list1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="List view" />
+
+          <Spinner
+              android:id="@+id/spinner"
+              android:layout_width="match_parent"
+              android:layout_height="45dp" />
+
+          <AutoCompleteTextView
+              android:id="@+id/autoCompleteTextView"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="type" />
+
+
+      </LinearLayout>
+
+
+</ScrollView>
